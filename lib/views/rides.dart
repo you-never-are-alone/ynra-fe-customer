@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ynba_api/ynba_api.dart';
+import 'package:ynba_api_ride/api.dart';
 
 class RidesPage extends StatelessWidget {
   final String title;

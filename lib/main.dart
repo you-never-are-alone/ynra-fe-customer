@@ -6,13 +6,6 @@ void main() {
   runApp(const MyApp());
 }
 
-@Openapi(
-    additionalProperties:
-        AdditionalProperties(pubName: 'ynba_api', pubAuthor: 'Eric'),
-    inputSpecFile: 'openapi/ynba.yml',
-    generatorName: Generator.dio,
-    outputDirectory: 'api',
-    alwaysRun: true)
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -28,3 +21,21 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+@Openapi(
+    additionalProperties:
+    AdditionalProperties(pubName: 'ynba_api_user', pubAuthor: 'Eric Härtel'),
+    inputSpecFile: 'api/ynba-user.yml',
+    generatorName: Generator.dart,
+    outputDirectory: 'api/user',
+    alwaysRun: true)
+class UserApi {}
+
+@Openapi(
+    additionalProperties:
+    AdditionalProperties(pubName: 'ynba_api_ride', pubAuthor: 'Eric Härtel'),
+    inputSpecFile: 'api/ynba-ride.yml',
+    generatorName: Generator.dart,
+    outputDirectory: 'api/ride',
+    alwaysRun: true, overwriteExistingFiles: true, runSourceGenOnOutput: true)
+class RideApi {}

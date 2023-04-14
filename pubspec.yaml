@@ -13,8 +13,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   openapi_generator_annotations: ^4.0.0
-  ynba_api:
-    path: api
+  ynba_api_ride:
+    path: api/ride
 
 dev_dependencies:
   flutter_test:

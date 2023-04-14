@@ -11,4 +11,4 @@ function build_fe() {
 build_fe
 
 # TODO: find out on what system you are and run according device
-#flutter run -d linux
+flutter run -d linux
