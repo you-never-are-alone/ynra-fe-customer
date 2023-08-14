@@ -102,9 +102,9 @@ components:
             $ref: '#/components/schemas/Point'
     Point:
       type: object
-      required:
-        - lat
-        - lon
+#      required:
+#        - lat
+#        - lon
       properties:
         lat:
           type: number

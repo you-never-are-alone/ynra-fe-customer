@@ -1,5 +1,10 @@
 # ynba-fe-customer
-You Never Bike Alone - Customer Frontend: The frontend based on Flutter
+You Never R Alone - Customer Frontend: The frontend based on Flutter
+
+## Plans
+* rollout to AWS: make available under http://app.ynra.eu
+* integrate with AWS cognito
+* integrate with a Rest API
 
 ## Requirements
 ### Flutter
