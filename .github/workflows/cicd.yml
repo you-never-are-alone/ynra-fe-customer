@@ -37,7 +37,7 @@ jobs:
           flutter build web --release --web-renderer canvaskit
 
       - name: Login
-        if: github.ref == 'main'
+        if: github.ref == 'refs/heads/main'
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
