@@ -45,5 +45,5 @@ jobs:
           aws-region: eu-central-1
 
       - name: Deploy
-        if: github.ref == 'main'
+        if: github.ref == 'refs/heads/main'
         run: aws s3 sync ./build/web s3://app.ynra.eu
