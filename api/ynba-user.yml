@@ -1,0 +1,48 @@
+openapi: "3.0.2"
+info:
+  title: You Never Bike Alone User API
+  version: "1.0.0-SNAPSHOT"
+
+paths:
+  /users:
+    put:
+      summary: Updates or Creates a User
+      responses:
+        '200':
+          description: User successfully updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '201':
+          description: User successfully created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+    get:
+      summary: Returns a list of all Users
+      responses:
+        '200':
+          description: a list of Users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        firstname:
+          type: string
+        lastname:
+          type: string
+
