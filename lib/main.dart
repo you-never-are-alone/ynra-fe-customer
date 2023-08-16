@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepOrange,
       ),
       onGenerateRoute: controller,
-      initialRoute: rides,
+      initialRoute: register,
     );
   }
 }
